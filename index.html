@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="is">
+<html lang="is" class="is-loading">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" href="/hopbilar-preview/favicon.png" />
     <link rel="apple-touch-icon" href="/hopbilar-preview/apple-touch-icon.png" />
     <link rel="preload" as="font" type="font/woff2" href="/hopbilar-preview/media/switzer.woff2" crossorigin />
+    <link rel="preload" as="image" href="/hopbilar-preview/media/logo.png" />
+    <style>.loader{z-index:100;clip-path:inset(0);background:#fff;place-content:center;justify-items:center;gap:28px;animation:0s 6s forwards loader-fail;display:grid;position:fixed;inset:0}.loader-logo{width:clamp(150px,22vw,210px);height:auto}.loader-line{background:oklch(92% .01 258);width:clamp(120px,16vw,160px);height:2px;display:block;overflow:hidden}.loader-line span{transform-origin:0;background:#0060a9;height:100%;display:block;transform:scaleX(0)}html.is-loading,html.is-loading body{overflow:hidden}@keyframes loader-fail{to{visibility:hidden}}@media (prefers-reduced-motion:reduce){.loader-line{display:none}}</style>
     <title>Hópbílar — Góða ferð</title>
     <script type="application/ld+json">
       {
@@ -25,10 +27,14 @@
         "address": { "@type": "PostalAddress", "addressLocality": "Hafnarfjörður", "addressCountry": "IS" }
       }
     </script>
-    <script type="module" crossorigin src="/hopbilar-preview/assets/index-CKENZl6s.js"></script>
-    <link rel="stylesheet" crossorigin href="/hopbilar-preview/assets/index-CCijx8YD.css">
+    <script type="module" crossorigin src="/hopbilar-preview/assets/index-BJ3ls8ad.js"></script>
+    <link rel="stylesheet" crossorigin href="/hopbilar-preview/assets/index-C7fEAJqf.css">
   </head>
   <body>
+    <div class="loader" id="loader" aria-hidden="true">
+      <img class="loader-logo" src="/hopbilar-preview/media/logo.png" width="498" height="282" alt="" />
+      <span class="loader-line"><span></span></span>
+    </div>
     <a class="skip" href="#main">Fara í efni</a>
     <div class="mobile-awning" aria-hidden="true"></div>
     <header class="header">
